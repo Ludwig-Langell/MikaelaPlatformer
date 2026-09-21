@@ -136608,6 +136608,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ee34f58e256d30544acda0980bbe070b, type: 3}
   - {fileID: 8300000, guid: a3e24f493eebe684bb2dae04a013c895, type: 3}
   jumpParticleSystem: {fileID: 573338398}
+  doubleJumpParticleSystem: {fileID: 0}
 --- !u!114 &859175577
 MonoBehaviour:
   m_ObjectHideFlags: 0
