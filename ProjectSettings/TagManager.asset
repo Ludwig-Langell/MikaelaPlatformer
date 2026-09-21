@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - EnemyBlock
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Enemy
+  - EnemyBlock
+  - Player
+  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackgroundCaveOpening
+    uniqueID: 1221878683
+    locked: 0
+  - name: BackgroundForest-5
+    uniqueID: 2142644713
+    locked: 0
+  - name: BackgroundForest4
+    uniqueID: 31572457
+    locked: 0
+  - name: BackgroundForest-3
+    uniqueID: 2658779775
+    locked: 0
+  - name: BackgroundForest-2
+    uniqueID: 1146787163
+    locked: 0
+  - name: BackgroundForest-1
+    uniqueID: 2963726159
+    locked: 0
+  - name: BackgroundForest-0
+    uniqueID: 507429273
+    locked: 0
+  - name: MidgroundForest
+    uniqueID: 2792302501
+    locked: 0
+  - name: ForegroundForest
+    uniqueID: 2037142511
+    locked: 0
+  - name: Background
+    uniqueID: 3478198019
+    locked: 0
+  - name: Background-1
+    uniqueID: 1514641687
+    locked: 0
+  - name: Background-2
+    uniqueID: 665093071
+    locked: 0
+  - name: Background-2.5
+    uniqueID: 3465398097
+    locked: 0
+  - name: Background-3
+    uniqueID: 1249467797
+    locked: 0
+  - name: BackgroundMidground
+    uniqueID: 3323511279
+    locked: 0
+  - name: BackgroundForeground
+    uniqueID: 2011907719
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Details
+    uniqueID: 3677173367
+    locked: 0
+  - name: Ground
+    uniqueID: 2040375349
+    locked: 0
+  - name: GroundForeground
+    uniqueID: 3477598091
+    locked: 0
+  - name: Pickup
+    uniqueID: 2003356215
+    locked: 0
+  - name: Player
+    uniqueID: 361768087
+    locked: 0
+  - name: QuestGiver_Panel
+    uniqueID: 1685922613
+    locked: 0
+  - name: Particles
+    uniqueID: 963284609
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
