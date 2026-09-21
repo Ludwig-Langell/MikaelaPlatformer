@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private ParticleSystem jumpParticleSystem;
     [SerializeField] private ParticleSystem doubleJumpParticleSystem;
     bool canMove = true;
-    bool doubleJumpUnlocked = false;
+    bool doubleJumpUnlocked = true; //true eller false om doublejump ska vara upplåst direkt eller ej
     bool canDoubleJump = true;
     
 
@@ -77,10 +77,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
+        float jumpDirection = Mathf.Sign(rgbd.gravityScale); //tillagd för att kunna hoppa även när reversegravity är igång
+
         if (CheckIsGrounded() == true)
         {
-            rgbd.AddForce(new Vector2(0, jumpForce));
+            rgbd.AddForce(new Vector2(0, jumpForce * jumpDirection));
             jumpParticleSystem.Play();
+
             int randomJumpSound = Random.Range(0, jumpSounds.Length);
             audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
             //Ange värde 0-3 i brackets ovanför för att välja specifikt sound
@@ -88,9 +91,10 @@ public class PlayerMovement : MonoBehaviour
         else if (CheckIsGrounded() != true && canDoubleJump == true && doubleJumpUnlocked == true)
         {
             rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0);
-            rgbd.AddForce(new Vector2(0, jumpForce));
-            canDoubleJump=false;
+            rgbd.AddForce(new Vector2(0, jumpForce * jumpDirection));
+            canDoubleJump = false;
             doubleJumpParticleSystem.Play();
+
             int randomJumpSound = Random.Range(0, jumpSounds.Length);
             audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
         }
@@ -99,8 +103,11 @@ public class PlayerMovement : MonoBehaviour
 
     private bool CheckIsGrounded()
     {
-        RaycastHit2D leftHit = Physics2D.Raycast(leftFoot.position, Vector2.down, raycastDistance, whatIsGround);
-        RaycastHit2D rightHit = Physics2D.Raycast(rightFoot.position, Vector2.down, raycastDistance, whatIsGround);
+        Vector2 groundDirection = rgbd.gravityScale >= 0 ? Vector2.down : Vector2.up;
+        //Omgjord pga att reversegravity med flipsprite ska fungera med hopp, raycastsen måste peka mot det aktuella golvet, inte bara ner
+
+        RaycastHit2D leftHit = Physics2D.Raycast(leftFoot.position, groundDirection, raycastDistance, whatIsGround);
+        RaycastHit2D rightHit = Physics2D.Raycast(rightFoot.position, groundDirection, raycastDistance, whatIsGround);
 
         if (leftHit.collider != null && leftHit || rightHit.collider !=null && rightHit)
         {
