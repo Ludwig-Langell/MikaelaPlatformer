@@ -26,3 +26,4 @@ public class PlayerQuest : MonoBehaviour
     public int GetOrbs() { return orbs;}
     public int GetorbsToCollect() { return orbsToCollect; }
 }
+//Mikaela merge conflict test med mig själv nummer 2

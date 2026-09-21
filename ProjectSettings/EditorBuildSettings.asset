@@ -9,10 +9,28 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f957618eb8ba0814bac56e05b2959c77
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Level1(VideoScene).unity
+    guid: 99c4a0530236e0c4b952092caf1fa219
   - enabled: 1
     path: Assets/Scenes/Level2.unity
+    guid: 75ea2cbb77b4cf240bf3bc4af8a407b7
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: fe1705692df95d0459f633203b2bcb45
+  - enabled: 1
+    path: Assets/Scenes/Level4WIP.unity
+    guid: 8c11fc7063c273f41aa20f2d72c9e963
+  - enabled: 0
+    path: "Assets/Scenes/\xF6Level3Old.unity"
+    guid: 957be9b12ab0e0b4ca491ca10c12e8cd
+  - enabled: 0
+    path: "Assets/Scenes/\xF6LevelWithBoxesTest.unity"
+    guid: e13a3f8ca242737409be05532b30ee6b
+  - enabled: 0
+    path: "Assets/Scenes/\xF6Level1Old.unity"
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
+    path: "Assets/Scenes/\xF6Level2Old.unity"
     guid: 878ac29776c17c34a88d875cd96b031c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
