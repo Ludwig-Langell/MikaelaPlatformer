@@ -99,9 +99,6 @@ TagManager:
   - name: Ground
     uniqueID: 2040375349
     locked: 0
-  - name: GroundForeground
-    uniqueID: 3477598091
-    locked: 0
   - name: Pickup
     uniqueID: 2003356215
     locked: 0
@@ -113,6 +110,9 @@ TagManager:
     locked: 0
   - name: Particles
     uniqueID: 963284609
+    locked: 0
+  - name: GroundForeground
+    uniqueID: 3477598091
     locked: 0
   m_RenderingLayers:
   - Default
