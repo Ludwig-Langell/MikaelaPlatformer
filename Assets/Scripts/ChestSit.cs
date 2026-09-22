@@ -22,7 +22,7 @@ public class ChestSit : MonoBehaviour
 
         if(transform.position == target2.position)
         {
-            transform.position = target1.position;
+            currentTarget = target1;
         }
 
         transform.position = Vector2.MoveTowards(transform.position, currentTarget.position, moveSpeed * Time.deltaTime);

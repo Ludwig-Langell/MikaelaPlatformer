@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; //behövs för coroutines
 
 [System.Serializable]
 public class ColorMapping
@@ -15,9 +16,12 @@ public class BoxAbilities : MonoBehaviour
     [SerializeField] private SpriteRenderer objectRenderer;
     [SerializeField] private ColorMapping[] colorMappings;
     [SerializeField] private Rigidbody2D rb; //För att kunna dra rigidbodyn på boxabilities scriptet i inspectorn, eftersom jag ej använder getcomponent för den
+    [SerializeField] private float exitGraceTime = 0.15f; //Tid utanför zonen innan effekten faktiskt återställs, för att undvika flimmer vid kanten
 
     private Color originalColor;
     private float originalGravity;
+    private Coroutine revertCoroutine;
+    //Originalfärg och gravity för spriten
   
 
     void Start()
@@ -35,6 +39,13 @@ public class BoxAbilities : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        //Om en revert är på gång, avbryt den eftersom spelaren fortfarande är kvar i en zon
+        if (revertCoroutine != null)
+        {
+            StopCoroutine(revertCoroutine);
+            revertCoroutine = null;
+        }
+
         foreach (ColorMapping mapping in colorMappings)
         {
             if (other.CompareTag(mapping.tag))
@@ -53,13 +64,26 @@ public class BoxAbilities : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        //Istället för att återställa direkt, vänta exitGraceTime sekunder - avbryts i OnTriggerEnter2D om spelaren kommer in igen i tid
+        if (revertCoroutine != null)
+        {
+            StopCoroutine(revertCoroutine);
+        }
+        revertCoroutine = StartCoroutine(RevertAfterDelay());
+    }
+ 
+    private IEnumerator RevertAfterDelay()
+    {
+        yield return new WaitForSeconds(exitGraceTime);
         objectRenderer.color = originalColor;
         rb.gravityScale = originalGravity;
 
         Vector3 scale = transform.localScale;
         scale.y = Mathf.Abs(scale.y);
         transform.localScale = scale;
-        //Samma som ovanstående anteckningar men för att spriten ska gå tillbaka till normalläge när man lämnar boxen
+        //spriten ska gå tillbaka till normalläge efter en viss tid när man lämnar boxen (undviker att spriten flippar ur)
+
+        revertCoroutine = null;
     }
 
 }
