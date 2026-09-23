@@ -87,6 +87,9 @@ TagManager:
   - name: BackgroundMidground
     uniqueID: 3323511279
     locked: 0
+  - name: Foliage
+    uniqueID: 883374087
+    locked: 0
   - name: BackgroundForeground
     uniqueID: 2011907719
     locked: 0
@@ -113,6 +116,9 @@ TagManager:
     locked: 0
   - name: GroundForeground
     uniqueID: 3477598091
+    locked: 0
+  - name: EnemyChaserHideout
+    uniqueID: 2579726629
     locked: 0
   m_RenderingLayers:
   - Default
