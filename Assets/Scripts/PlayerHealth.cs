@@ -1,17 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
 
     [SerializeField] private int startingHealth = 5;
-    [SerializeField] private Transform spawnPosition;
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Image fillImage;
     [SerializeField] private Color normalHealthColor, criticalHealthColor;
     [SerializeField] private AudioClip damageSoundEffect;
     [SerializeField] private AudioClip healSoundEffect;
-    [SerializeField] private AudioClip respawnSoundEffect;
     private AudioSource audioSource;
     private int currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,17 +30,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Respawn();
+            ReloadScene();
         }
     }
 
-    private void Respawn()
+    private void ReloadScene()
     {
-        currentHealth = startingHealth;
-        UpdateHealthbar();
-        transform.position = spawnPosition.position;
-        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        audioSource.PlayOneShot(respawnSoundEffect);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void UpdateHealthbar()
