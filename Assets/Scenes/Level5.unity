@@ -47534,7 +47534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &208390655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102657,7 +102657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1116490640
 RectTransform:
   m_ObjectHideFlags: 0
@@ -144181,7 +144181,7 @@ PrefabInstance:
     - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
       propertyPath: finishedText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1820091536}
     - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
       propertyPath: unfinishedText
       value: 
@@ -146488,7 +146488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2120402074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -146822,7 +146822,7 @@ PrefabInstance:
       objectReference: {fileID: 2120402075}
     - target: {fileID: 7496685904943150791, guid: 4c646f34b73f9c94290b4cc00643ea11, type: 3}
       propertyPath: orbsToCollect
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
