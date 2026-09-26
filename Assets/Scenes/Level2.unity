@@ -45984,7 +45984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!61 &607739166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100816,7 +100815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!1 &1181414578
 GameObject:
   m_ObjectHideFlags: 0
@@ -100862,7 +100860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!61 &1181414581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -105275,7 +105272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!61 &1844689165
 BoxCollider2D:
   m_ObjectHideFlags: 0
