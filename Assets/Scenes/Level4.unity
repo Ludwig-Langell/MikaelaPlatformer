@@ -55525,7 +55525,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.7, z: -10}
+  m_LocalPosition: {x: 0, y: 3.7, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -138368,7 +138368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!61 &1181414581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145181,7 +145180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13120fe7c65cca741a34f897c0835de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Killzone
-  spawnPosition: {fileID: 640707088}
 --- !u!61 &1801145747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145901,6 +145899,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2129681522}
     - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
+      propertyPath: zoomedCameraZ
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
       propertyPath: unfinishedText
       value: 
       objectReference: {fileID: 1820091536}
@@ -146073,6 +146075,10 @@ PrefabInstance:
       propertyPath: textPopup
       value: 
       objectReference: {fileID: 1498363505}
+    - target: {fileID: 5370556802232172288, guid: 6b3482d0bb5860549b7d6de22dc1ef8e, type: 3}
+      propertyPath: zoomedCameraZ
+      value: -12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
