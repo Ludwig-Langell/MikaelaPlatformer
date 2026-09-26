@@ -145894,7 +145894,7 @@ PrefabInstance:
       objectReference: {fileID: 883368220}
     - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
       propertyPath: levelIndex
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4758115590504649500, guid: a21f7687274bb794d88e3c3e4d553636, type: 3}
       propertyPath: finishedText
