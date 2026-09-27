@@ -61,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
         }
         currentHealth += healthToRestore;
         UpdateHealthbar();
-        audioSource.PlayOneShot(healSoundEffect);
+        audioSource.PlayOneShot(healSoundEffect, 0.25f);
 
         if(currentHealth > startingHealth)
         {
