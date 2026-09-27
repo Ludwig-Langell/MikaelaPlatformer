@@ -1681,7 +1681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &949778681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nMikaela samuelsson\n\n\n\nD&K Essential Caves Tileset - Uma Alma, SOMETHING\r\nParallax Cave Background - Silvdragoon_D\r\nForest Parallax Background - Bongseng\nFantasy Forest - Mattz Art\r\nNinja Adventure Asset Pack - pixel-boy\r\nSatyr Sprite - LuckyLoops\r\nFlying Demon Sprite - Mattz Art\r\n2D Orb Assets - AXIALE\nPixel Speech Bubbles - Aspecs Gaming\r\nTengoku Font - jsr_Games\r\nUpheaval Font - \xC6nigma\r\n\r\n\r\r\nLife in Corrupted Binary - HaelDB \r\nCave Theme - Brandon75689 (Submitted by HaelDB)\nNovember SNOW - CYNICMUSIC\n\n"
+  m_text: "\n\nMikaela samuelsson, Nils Hulin\n\n\n\nD&K Essential Caves Tileset - Uma Alma, SOMETHING\r\nParallax Cave Background - Silvdragoon_D\r\nForest Parallax Background - Bongseng\nFantasy Forest - Mattz Art\r\nNinja Adventure Asset Pack - pixel-boy\r\nSatyr Sprite - LuckyLoops\r\nFlying Demon Sprite - Mattz Art\r\n2D Orb Assets - AXIALE\nPixel Speech Bubbles - Aspecs Gaming\r\nTengoku Font - jsr_Games\r\nUpheaval Font - \xC6nigma\r\n\r\n\r\r\nLife in Corrupted Binary - HaelDB \r\nCave Theme - Brandon75689 (Submitted by HaelDB)\nNovember SNOW - CYNICMUSIC\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
   m_sharedMaterial: {fileID: 7841119576207623418, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
