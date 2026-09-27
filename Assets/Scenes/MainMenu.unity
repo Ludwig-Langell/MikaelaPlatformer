@@ -1135,7 +1135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 240, y: -0.000022888184}
+  m_AnchoredPosition: {x: 289, y: 38}
   m_SizeDelta: {x: 479.5, y: 282.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646047179
@@ -1590,6 +1590,81 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &822337614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822337615}
+  - component: {fileID: 822337617}
+  - component: {fileID: 822337616}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &822337615
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822337614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 949778681}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -72, y: 160}
+  m_SizeDelta: {x: 497.3, y: 9.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &822337616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822337614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19579923, g: 0.60910726, b: 0.754717, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &822337617
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822337614}
+  m_CullTransparentMesh: 1
 --- !u!1 &871621455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,7 +2030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &949778681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1968,6 +2043,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 822337615}
   - {fileID: 1839675291}
   - {fileID: 72511799}
   - {fileID: 1087449665}
@@ -2052,7 +2128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67.05999, y: 70.7}
+  m_AnchoredPosition: {x: -67.05999, y: 29}
   m_SizeDelta: {x: 479.5, y: 282.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087449666
@@ -2075,7 +2151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nMikaela samuelsson, Nils Hulin, Ludwig Langell\n\n\n\nD&K Essential Caves Tileset - Uma Alma, SOMETHING\r\nParallax Cave Background - Silvdragoon_D\r\nForest Parallax Background - Bongseng\nFantasy Forest - Mattz Art\r\nNinja Adventure Asset Pack - pixel-boy\r\nSatyr Sprite - LuckyLoops\r\nFlying Demon Sprite - Mattz Art\r\n2D Orb Assets - AXIALE\nPixel Speech Bubbles - Aspecs Gaming\r\nTengoku Font - jsr_Games\r\nUpheaval Font - \xC6nigma\r\n\r\n\r\r\nLife in Corrupted Binary - HaelDB \r\nCave Theme - Brandon75689 (Submitted by HaelDB)\nNovember SNOW - CYNICMUSIC\n\n"
+  m_text: "\n\n\nD&K Essential Caves Tileset\r\nParallax Cave Background\nParallax Red Cave\r\nForest Parallax Background\nForest Background\nFantasy Forest\nFoliage sprites\r\nNinja Adventure Asset Pack\r\nSatyr Sprite\nFlying Eye Monster\nSpider Sprites\nSunnyland\r\nFlying Demon Sprite\r\n2D Orb Assets\nPixel Speech Bubbles \r\nTengoku Font \r\nUpheaval Font \r\n\r\n\n\r\nLife in Corrupted Binary \r\nCave Theme \nNovember SNOW \nDripping water loop\nDark Shrine loop\nForgotten victory\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
   m_sharedMaterial: {fileID: 7841119576207623418, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
@@ -2234,7 +2310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019073486, y: -7}
+  m_AnchoredPosition: {x: 0.000019073486, y: -6}
   m_SizeDelta: {x: 479.5, y: 332.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188418975
@@ -2259,7 +2335,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    Mikaela samuelsson, xxxxxxxxxx, xxxxxxxxxx'
+    Mikaela samuelsson, Nils Hulin, Ludwig Langell'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
   m_sharedMaterial: {fileID: 7841119576207623418, guid: 5033bb4af49ba4d4faa96ce752d9f9ad, type: 2}
@@ -3933,7 +4009,7 @@ MonoBehaviour:
 
 
 
-    Graphic Assets:
+    GraphicAL Assets:             by:
 
 
 
