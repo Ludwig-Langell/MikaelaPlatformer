@@ -27,10 +27,10 @@ public class EnemyChaser : MonoBehaviour
     {
         rend = GetComponent<SpriteRenderer>();
 
-        // Remember where the enemy started
+        // för att komma ihåg vart fienden startar så den kan return dit sedan
         startPosition = transform.position;
 
-        // Find the player
+        // hitta spelaren i annat objekt då det inte är public
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
         if (playerObj != null)
@@ -44,7 +44,7 @@ public class EnemyChaser : MonoBehaviour
         if (player == null)
             return;
 
-        // Flip only while chasing
+        // flippar spriten (ögat) när spelaren springer åt annat håll
         if (isChasing)
         {
             if (player.position.x < transform.position.x)
@@ -84,7 +84,7 @@ public class EnemyChaser : MonoBehaviour
     {
         Vector2 nextPosition = Vector2.MoveTowards(transform.position, startPosition, moveSpeed * Time.fixedDeltaTime);
 
-        // Face the direction the enemy is moving
+        // gå tillbaka till startposition
         if (startPosition.x < transform.position.x)
         {
             rend.flipX = true;
@@ -96,7 +96,7 @@ public class EnemyChaser : MonoBehaviour
 
         transform.position = nextPosition;
 
-        // Enemy has reached its starting position
+        //fienden har kommit tillbaka till sin startposition nu
         if (Vector2.Distance(transform.position, startPosition) <= arrivalThreshold)
         {
             transform.position = startPosition;
@@ -105,14 +105,14 @@ public class EnemyChaser : MonoBehaviour
         }
     }
 
-    // Called by BoxAbilities when the player enters the enemy zone
+    // kallas på av boxabilities när spelaren går in i zonen
     public void Activate()
     {
         isChasing = true;
         isReturning = false;
     }
 
-    // Called by BoxAbilities when the player leaves the enemy zone
+    // kallas på av boxabilities när spelaren lämnar zonen
     public void Deactivate()
     {
         isChasing = false;
@@ -142,7 +142,7 @@ public class EnemyChaser : MonoBehaviour
                 {
                     movement.TakeKnockback(-knockbackForce, upwardsForce);
                 }
-            }
+            }//spelaren är oneshot om ögat slår den, instant respawn, så om health är allt annat är null så tar den damage
         }
     }
 
@@ -173,3 +173,4 @@ public class EnemyChaser : MonoBehaviour
         }
     }
 }
+//experimenterat om man ska kunna döda den eller ej men kommit fram till att det ska vara one shot för att öka stressen när man blir jagad

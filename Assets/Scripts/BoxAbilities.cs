@@ -6,25 +6,25 @@ public class BoxAbilities : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Only react to the actual enemy zone
+        
         if (!other.CompareTag("EnemyZone"))
             return;
 
         if (enemyToActivate != null)
         {
             enemyToActivate.Activate();
-        }
+        }//aktiverar fienden när spelaren är i zonen
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // Only react to the actual enemy zone
+        
         if (!other.CompareTag("EnemyZone"))
             return;
 
         if (enemyToActivate != null)
         {
             enemyToActivate.Deactivate();
-        }
+        }//avaktiverar fienden när spelaren lämnar zonen
     }
 }
